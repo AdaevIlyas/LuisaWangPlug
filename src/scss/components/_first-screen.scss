@@ -1,0 +1,76 @@
+.first-screen {
+  position: relative;
+  z-index: 10;
+
+  display: grid;
+  place-content: center;
+
+  &__cut-logo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: auto;
+    pointer-events: none;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__inner {
+    width: rem(864);
+
+    @media (max-width: 1024px) {
+      width: rem(600);
+    }
+
+    @media (max-width: 530px) {
+      width: 100%;
+      padding-inline: rem(16);
+    }
+  }
+
+  &__logo {
+    width: rem(860);
+    margin-bottom: rem(42);
+
+    @media (max-width: 1024px) {
+      width: rem(600);
+      margin-bottom: rem(28);
+    }
+
+    @media (max-width: 530px) {
+      display: block;
+      width: rem(260);
+      margin: 0 auto rem(12) auto;
+    }
+  }
+
+  &__texts {
+    display: flex;
+    align-items: center;
+    gap: rem(18);
+
+    @media (max-width: 530px) {
+      padding-inline: rem(21);
+      gap: rem(10);
+    }
+  }
+
+  &__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: rem(42);
+    line-height: 140%;
+    color: #fff;
+
+    @media (max-width: 1024px) {
+      font-size: rem(28);
+    }
+
+    @media (max-width: 530px) {
+      font-size: rem(14);
+    }
+  }
+}

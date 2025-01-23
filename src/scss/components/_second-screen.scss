@@ -1,0 +1,41 @@
+.second-screen {
+  position: relative;
+  z-index: 10;
+
+  display: grid;
+  place-content: center;
+
+  &__inner {
+    width: rem(1020);
+
+    @media (max-width: 1024px) {
+      width: rem(700);
+    }
+
+    @media (max-width: 530px) {
+      width: 100%;
+      padding-inline: rem(16);
+    }
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: rem(60);
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: rem(36);
+
+    @media (max-width: 1024px) {
+      font-size: rem(44);
+      margin-bottom: rem(22);
+    }
+
+    @media (max-width: 530px) {
+      font-size: rem(28);
+    }
+  }
+}
