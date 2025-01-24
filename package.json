@@ -12,7 +12,7 @@
     "zip": "gulp zip",
     "code": "editorconfig-checker"
   },
-  "author": "2Dit",
+  "author": "Ilyas",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.7",

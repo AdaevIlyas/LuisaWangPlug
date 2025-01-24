@@ -26,11 +26,11 @@ const swiper = new Swiper(".main-screen", {
   creativeEffect: {
     prev: {
       shadow: true,
-      // opacity: 0,
+      opacity: 0,
       translate: [0, "0%", 100]
     },
     next: {
-      // opacity: 1,
+      opacity: 1,
       translate: [0, "100%", 0]
     }
   }
